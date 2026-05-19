@@ -1,29 +1,114 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>lab22</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background: #0a0a0a;
-      color: #f0f0f0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-    }
-    span {
-      font-size: 1.25rem;
-      font-weight: 400;
-      letter-spacing: 0.15em;
-      opacity: 0.9;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>lab22 — studio</title>
+  <meta name="description" content="lab22 is a one-person product and consulting studio based in Ingolstadt. maker of nota." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <span>lab22</span>
+
+  <div class="page">
+
+    <!-- nav -->
+    <nav class="nav" aria-label="primary">
+      <a class="mark" href="#">lab22</a>
+      <ul>
+        <li><a href="nota/">nota</a></li>
+        <li><a href="work/">work</a></li>
+        <li><a href="studio/">studio</a></li>
+        <li><a href="contact/">contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- intro band -->
+    <header class="intro">
+      <div class="marker">index</div>
+      <p class="lede">
+        a one-person studio. <em>two practices</em>, one set of principles —
+        files over apps, process before product, ownership without lock-in.
+      </p>
+    </header>
+
+    <!-- section 1 — nota -->
+    <section class="section s-nota" id="nota">
+      <div class="marker"><span class="dot"></span>01 — nota</div>
+      <div class="body">
+        <h1 class="headline">
+          nota is not another journal.<br />
+          every entry is a file.
+          <span class="em yours">yours.</span>
+        </h1>
+        <p class="subline">write briefly. own completely.</p>
+        <a class="cta" href="#">
+          coming to the app store
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- section 2 — work -->
+    <section class="section s-work" id="work">
+      <div class="marker"><span class="dot"></span>02 — work</div>
+      <div class="body">
+        <p class="copy">
+          lab22 also builds <span>custom operational tools and processes</span>
+          <span class="softer">for the manufacturing industry.</span>
+        </p>
+        <a class="link" href="work/">
+          work
+          <span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- section 3 — closing -->
+    <section class="section s-close" id="studio">
+      <div class="marker"><span class="dot"></span>03 — studio</div>
+      <div class="body">
+        <p class="copy">
+          lab22 is a one-person studio based in
+          <span class="place">ingolstadt.</span>
+        </p>
+        <a class="email" href="mailto:hello@lab22.studio">hello@lab22.studio</a>
+      </div>
+    </section>
+
+    <!-- colophon -->
+    <div class="colophon">
+      <div class="marker">colophon</div>
+      <div class="meta">
+        <span>set in newsreader &amp; jetbrains mono</span>
+        <span>est. 2026</span>
+        <span>ingolstadt, de</span>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="foot">
+      <span class="left">lab22 · <a href="mailto:hello@lab22.studio">hello@lab22.studio</a> · ingolstadt</span>
+      <span class="right">
+        <span class="theme-switch" role="radiogroup" aria-label="theme">
+          <input type="radio" name="mode" id="mode-auto" checked />
+          <label for="mode-auto">auto</label>
+          <span class="sep">·</span>
+          <input type="radio" name="mode" id="mode-dark" />
+          <label for="mode-dark">dark</label>
+          <span class="sep">·</span>
+          <input type="radio" name="mode" id="mode-light" />
+          <label for="mode-light">light</label>
+        </span>
+        <span class="copy">©︎ mmxxvi</span>
+      </span>
+    </footer>
+
+  </div>
+
 </body>
 </html>
