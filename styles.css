@@ -616,3 +616,126 @@ html:has(#mode-light:checked) .theme-switch label[for="mode-light"] {
   .page-head { padding: 60px 0 32px; }
   .solo-body .email { font-size: clamp(28px, 9vw, 40px); }
 }
+
+/* ---------------------------------------------------------------
+   .artifact — minimal macOS window with placeholder viewport
+   used on the work page to showcase the dashboards
+   --------------------------------------------------------------- */
+
+.artifact {
+  margin: 44px 0 0;
+  border: 1px solid var(--rule);
+  border-radius: 9px;
+  overflow: hidden;
+  background: var(--bg-2);
+  max-width: 880px;
+  box-shadow:
+    0 1px 0 0 oklch(1 0 0 / 0.03) inset,
+    0 30px 60px -30px oklch(0 0 0 / 0.45),
+    0 8px 22px -8px oklch(0 0 0 / 0.35);
+}
+
+.artifact .titlebar {
+  height: 36px;
+  border-bottom: 1px solid var(--rule-soft);
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  gap: 8px;
+  background: linear-gradient(to bottom, var(--bg-2), var(--bg));
+  position: relative;
+}
+.artifact .titlebar .dots {
+  display: inline-flex;
+  gap: 8px;
+}
+.artifact .dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  opacity: 0.85;
+  box-shadow: 0 0 0 1px oklch(0 0 0 / 0.15) inset;
+}
+.artifact .dot.r { background: oklch(0.68 0.16 25); }
+.artifact .dot.y { background: oklch(0.82 0.14 80); }
+.artifact .dot.g { background: oklch(0.72 0.12 145); }
+
+.artifact .filename {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--fg-dim);
+  margin-left: 18px;
+}
+.artifact .badge {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  color: var(--fg-dim);
+  margin-left: auto;
+  text-transform: lowercase;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 1px;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.artifact .badge:hover {
+  color: var(--fg);
+  border-bottom-color: var(--fg-mute);
+}
+
+.artifact .viewport {
+  position: relative;
+  aspect-ratio: 1600 / 1000;
+  overflow: hidden;
+  background: var(--bg-2);
+  container-type: inline-size;
+}
+
+.artifact .viewport iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1600px;
+  height: 1000px;
+  border: 0;
+  transform-origin: 0 0;
+  transform: scale(calc(100cqw / 1600));
+  pointer-events: none;
+  will-change: transform;
+}
+
+.artifact .viewport--placeholder {
+  aspect-ratio: 1600 / 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:
+    repeating-linear-gradient(
+      135deg,
+      transparent 0,
+      transparent 14px,
+      var(--rule-soft) 14px,
+      var(--rule-soft) 15px
+    ),
+    var(--bg-2);
+}
+
+.artifact .viewport--placeholder .placeholder-msg {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.22em;
+  text-transform: lowercase;
+  color: var(--fg-dim);
+  padding: 8px 16px;
+  background: var(--bg);
+  border: 1px solid var(--rule-soft);
+}
+
+.artifact .hint {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .artifact { margin-top: 28px; }
+}
