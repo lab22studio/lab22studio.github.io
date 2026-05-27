@@ -3,20 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>privacy — lab22</title>
-  <meta name="description" content="Privacy policy for nota by lab22. Your notes stay yours — no servers, no tracking, no data collection." />
-
+  <title>privacy &mdash; lab22</title>
+  <meta name="description" content="Privacy policy for nota by lab22. Your notes stay yours." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
   <link rel="stylesheet" href="../styles.css" />
 </head>
 <body>
-
   <div class="page">
 
-    <!-- nav -->
     <nav class="nav" aria-label="primary">
       <a class="mark" href="../">lab22</a>
       <ul>
@@ -27,7 +23,6 @@
       </ul>
     </nav>
 
-    <!-- page header -->
     <header class="page-head">
       <div class="marker">privacy</div>
       <div>
@@ -36,72 +31,13 @@
       </div>
     </header>
 
-    <!-- short version -->
     <section class="solo-body">
-      <div class="marker"><span class="dot"></span>the short version</div>
+      <div class="marker"><span class="dot"></span>policy</div>
       <p>
-        nota stores your entries on your device and in your own iCloud Drive. lab22 does not collect, transmit, or have access to any of your data. there are no analytics, no advertising, no account system, no server-side storage. your notes are yours.
+        nota stores your entries on your device and in your own iCloud Drive. lab22 does not collect, transmit, or have access to any of your data &mdash; there are no analytics, no advertising identifiers, no account system, no crash-reporting SDKs, and no server-side storage of any kind. your notes are yours, always. everything nota processes stays local: journal entries are saved as Markdown files in your personal iCloud Drive vault (<code>iCloud&nbsp;Drive/lab22/nota/</code>) and never touch a lab22 server; location, when you allow it, is stored only as a city name inside the entry&rsquo;s file and is never transmitted anywhere; photos attached to entries are saved as JPEG files in the same vault alongside the Markdown file and are never uploaded; preferences such as accent colour, notification time, and reminder settings are stored in your device&rsquo;s local UserDefaults and never leave your device. nota contains no third-party tracking of any kind &mdash; there is no nota account, no sign-in, and no backend. nota does not know you exist. deleting an entry in nota removes the corresponding Markdown file and any attached photo from your vault; deleting the app removes all local preferences; entries in iCloud Drive persist until you delete them there directly &mdash; that is your data, not ours. nota is not directed at children under 13; we do not knowingly collect information from children &mdash; in fact, we do not collect information from anyone. if this policy ever changes materially, the effective date above will update and a note will appear on the <a href="../nota/">nota page</a>; given that nota collects nothing, material changes are unlikely. questions: <a href="mailto:hello@lab22.studio">hello@lab22.studio</a>
       </p>
     </section>
 
-    <!-- what nota processes -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>what nota processes</div>
-      <p>
-        <strong>journal entries</strong> &mdash; text you write is saved as Markdown files on your device and in your personal iCloud Drive vault (<code>iCloud Drive/lab22/nota/</code>). these files never touch a lab22 server.
-      </p>
-      <p>
-        <strong>location</strong> &mdash; when you compose an entry, nota may request your approximate location (city-level precision) to tag the entry. the location name is written into the entry&rsquo;s Markdown file on your device and is never transmitted anywhere.
-      </p>
-      <p>
-        <strong>photos</strong> &mdash; photos you attach to entries are saved as JPEG files alongside the Markdown file in your iCloud Drive vault. they are never uploaded to any nota or lab22 server.
-      </p>
-      <p>
-        <strong>preferences</strong> &mdash; accent colour, notification time, and other settings are stored in your device&rsquo;s local UserDefaults. they never leave your device.
-      </p>
-    </section>
-
-    <!-- what nota does not do -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>what nota does not do</div>
-      <p>
-        nota contains no analytics SDKs, no crash-reporting services, no advertising identifiers, and no third-party tracking of any kind. there is no nota account, no sign-in, and no backend. nota does not know you exist.
-      </p>
-    </section>
-
-    <!-- data deletion -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>data deletion</div>
-      <p>
-        deleting an entry in nota removes the corresponding Markdown file (and attached photo, if any) from your vault. deleting the app removes all local preferences. entries in iCloud Drive persist until you delete them there directly &mdash; that is your data, not ours.
-      </p>
-    </section>
-
-    <!-- children -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>children</div>
-      <p>
-        nota is not directed at children under 13. we do not knowingly collect any information from children &mdash; in fact, we do not collect information from anyone.
-      </p>
-    </section>
-
-    <!-- changes -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>changes</div>
-      <p>
-        if this policy ever changes materially, the effective date above will update and a note will appear on the <a href="../nota/">nota page</a>. given that nota collects nothing, material changes are unlikely.
-      </p>
-    </section>
-
-    <!-- contact -->
-    <section class="solo-body">
-      <div class="marker"><span class="dot"></span>contact</div>
-      <p>
-        questions? <a href="mailto:hello@lab22.studio">hello@lab22.studio</a>
-      </p>
-    </section>
-
-    <!-- colophon -->
     <div class="colophon">
       <div class="marker">colophon</div>
       <div class="meta">
@@ -111,9 +47,8 @@
       </div>
     </div>
 
-    <!-- footer -->
     <footer class="foot">
-      <span class="left">lab22 &middot; <a href="mailto:hello@lab22.studio">hello@lab22.studio</a> &middot; ingolstadt</span>
+      <span class="left">lab22 &middot; <a href="mailto:hello@lab22.studio">hello@lab22.studio</a> &middot; <a href="/privacy/">privacy</a> &middot; ingolstadt</span>
       <span class="right">
         <span class="theme-switch" role="radiogroup" aria-label="theme">
           <input type="radio" name="mode" id="mode-auto" checked />
@@ -130,6 +65,5 @@
     </footer>
 
   </div>
-
 </body>
 </html>
