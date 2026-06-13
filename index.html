@@ -1,114 +1,109 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>lab22 — studio</title>
-  <meta name="description" content="lab22 is a one-person product and consulting studio based in Ingolstadt. maker of nota." />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200;0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>lab22 — design studio</title>
+<meta name="description" content="lab22 — a one-person design studio in ingolstadt. we build digital solutions for ideas that need momentum." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="wrap">
 
-  <div class="page">
-
-    <!-- nav -->
-    <nav class="nav" aria-label="primary">
-      <a class="mark" href="#">lab22</a>
+    <nav class="nav reveal d1" aria-label="primary">
+      <a class="brand" href="./" aria-label="lab22 home">
+        <span class="mark-sq" aria-hidden="true">■</span>
+        <span class="wordmark">lab22</span>
+      </a>
       <ul>
-        <li><a href="nota/">nota</a></li>
         <li><a href="work/">work</a></li>
+        <li><a href="nota/">nota</a></li>
         <li><a href="studio/">studio</a></li>
         <li><a href="contact/">contact</a></li>
       </ul>
     </nav>
 
-    <!-- intro band -->
-    <header class="intro">
-      <div class="marker">index</div>
-      <p class="lede">
-        a one-person studio. <em>two practices</em>, one set of principles —
-        files over apps, process before product, ownership without lock-in.
-      </p>
+    <header class="hero">
+      <div class="over reveal d2">
+        <span class="label idx">index</span>
+        <span class="label">a one-person design studio</span>
+      </div>
+      <h1 class="display reveal d2">we build<br/>digital solutions<br/>for ideas that<br/>need momentum<span class="soft">.</span></h1>
+      <p class="lede-line reveal d3">digital solutions, <span class="soft">made to be owned.</span></p>
+      <div class="principles reveal d3">
+        <span><b>files over apps</b></span>
+        <span><b>process before product</b></span>
+        <span><b>ownership without lock-in</b></span>
+      </div>
     </header>
 
-    <!-- section 1 — nota -->
-    <section class="section s-nota" id="nota">
-      <div class="marker"><span class="dot"></span>01 — nota</div>
-      <div class="body">
-        <h1 class="headline">
-          nota is not another journal.<br />
-          every entry is a file.
-          <span class="em yours">yours.</span>
-        </h1>
+    <section class="row" id="work">
+      <div class="rail"><span class="num">01</span><span class="label">work</span></div>
+      <div>
+        <h2 class="h-lg">lab22 builds custom digital solutions.</h2>
+        <a class="cta" href="contact/">let's talk about your project! <span class="arrow">→</span></a>
+      </div>
+    </section>
+
+    <section class="row" id="nota">
+      <div class="rail"><span class="num">02</span><span class="label">apps</span></div>
+      <div>
+        <h2 class="h-lg">lab22 builds apps. nota is the first — every entry is a file. <span class="em">yours.</span></h2>
         <p class="subline">write briefly. own completely.</p>
-        <a class="cta" href="#">
-          coming to the app store
-          <span class="arrow">→</span>
-        </a>
+        <a class="cta" href="nota/">see nota <span class="arrow">→</span></a>
       </div>
     </section>
 
-    <!-- section 2 — work -->
-    <section class="section s-work" id="work">
-      <div class="marker"><span class="dot"></span>02 — work</div>
-      <div class="body">
-        <p class="copy">
-          lab22 also builds <span>custom operational tools and processes</span>
-          <span class="softer">for the manufacturing industry.</span>
-        </p>
-        <a class="link" href="work/">
-          work
-          <span class="arrow">→</span>
-        </a>
+    <section class="row" id="studio">
+      <div class="rail"><span class="num">03</span><span class="label">studio</span></div>
+      <div>
+        <p class="copy">lab22 is a one-person design studio based in <span class="place">ingolstadt.</span></p>
+        <a class="email" href="mailto:hello@lab22.studio">hello@lab22.studio <span class="arrow">→</span></a>
       </div>
     </section>
 
-    <!-- section 3 — closing -->
-    <section class="section s-close" id="studio">
-      <div class="marker"><span class="dot"></span>03 — studio</div>
-      <div class="body">
-        <p class="copy">
-          lab22 is a one-person studio based in
-          <span class="place">ingolstadt.</span>
-        </p>
-        <a class="email" href="mailto:hello@lab22.studio">hello@lab22.studio</a>
+    <footer class="banner">
+      <div class="banner-top">
+        <a class="banner-mark" href="./" aria-label="lab22">lab22</a>
+        <nav class="banner-nav" aria-label="footer">
+          <a href="work/">work</a>
+          <a href="nota/">nota</a>
+          <a href="studio/">studio</a>
+          <a href="contact/">contact</a>
+        </nav>
       </div>
-    </section>
-
-    <!-- colophon -->
-    <div class="colophon">
-      <div class="marker">colophon</div>
-      <div class="meta">
-        <span>set in newsreader &amp; jetbrains mono</span>
+      <div class="banner-meta">
+        <span>design studio · ingolstadt, de</span>
+        <span class="sl">/</span>
+        <span>48.7665° n, 11.4258° e</span>
+        <span class="sl">/</span>
         <span>est. 2026</span>
-        <span>ingolstadt, de</span>
+        <span class="sl">/</span>
+        <span>files over apps</span>
       </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="foot">
-      <span class="left">lab22 · <a href="mailto:hello@lab22.studio">hello@lab22.studio</a> · <a href="/privacy/">privacy</a> · <a href="/impressum/">impressum</a> · ingolstadt</span>
-      <span class="right">
-        <span class="theme-switch" role="radiogroup" aria-label="theme">
-          <input type="radio" name="mode" id="mode-auto" checked />
-          <label for="mode-auto">auto</label>
-          <span class="sep">·</span>
-          <input type="radio" name="mode" id="mode-dark" />
-          <label for="mode-dark">dark</label>
-          <span class="sep">·</span>
-          <input type="radio" name="mode" id="mode-light" />
-          <label for="mode-light">light</label>
-        </span>
-        <span class="copy">©︎ mmxxvi</span>
-      </span>
+      <div class="banner-foot">
+        <span>set in archivo &amp; jetbrains mono</span>
+        <span><a href="privacy/">privacy</a> · <a href="impressum/">impressum</a> · <a href="mailto:hello@lab22.studio">hello@lab22.studio</a> · ©︎ mmxxvi</span>
+      </div>
     </footer>
 
   </div>
 
+  <div class="audit" role="group" aria-label="theme and accent">
+    <span class="lab">theme</span>
+    <button class="seg" data-theme="dark" aria-pressed="true">dark</button>
+    <button class="seg" data-theme="light" aria-pressed="false">light</button>
+    <span class="div"></span>
+    <span class="lab">accent</span>
+    <button class="sw" style="background:#00a8ff" data-neon="#00a8ff" data-name="azure · #00A8FF" aria-pressed="true" title="azure (signature)"></button>
+    <button class="sw" style="background:#39ff14" data-neon="#39ff14" data-name="volt · #39FF14" aria-pressed="false" title="volt"></button>
+    <button class="sw" style="background:#d400ff" data-neon="#d400ff" data-name="ultraviolet · #D400FF" aria-pressed="false" title="ultraviolet"></button>
+    <span class="name mono" id="neon-name">azure · #00A8FF</span>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
