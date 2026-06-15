@@ -104,6 +104,10 @@ a{color:inherit;text-decoration:none}
 .row .copy{font-size:clamp(22px,3.4vw,40px);font-weight:500;font-stretch:108%;line-height:1.18;letter-spacing:-.01em;max-width:18ch}
 .row .copy .soft{color:var(--ink-faint)}
 .place{color:var(--neon)}
+/* home work-row: big headline doubles as the link to contact */
+.row-link{display:inline-block}
+.row-link .arrow{font-size:.42em;vertical-align:.18em}
+.row-link:hover .arrow{transform:translateX(5px)}
 
 /* ---------- inner-page components ---------- */
 .page-head{display:grid;grid-template-columns:var(--rail) 1fr;gap:clamp(18px,3vw,48px);padding:clamp(40px,6vw,80px) 0 clamp(30px,4vw,52px);border-bottom:1px solid var(--rule)}
@@ -138,6 +142,7 @@ a{color:inherit;text-decoration:none}
 .solo-body .marker{display:flex;align-items:center;gap:8px;font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.08em;color:var(--neon)}
 .solo-body .marker .dot{width:6px;height:6px;background:var(--neon);display:inline-block}
 .solo-body p{font-size:clamp(17px,1.9vw,22px);line-height:1.6;color:var(--ink);max-width:64ch;font-weight:400}
+.solo-body p+p{margin-top:1.1em}
 .solo-body p em{font-style:italic}
 .solo-body p code{font-family:"JetBrains Mono",monospace;font-size:.9em;color:var(--ink-dim)}
 .solo-body p a{color:var(--neon);border-bottom:1px solid var(--rule);transition:border-color .2s}
