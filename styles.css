@@ -132,6 +132,22 @@ a{color:inherit;text-decoration:none}
 .section .body p a{color:var(--neon);border-bottom:1px solid var(--rule);transition:border-color .2s}
 .section .body p a:hover{border-color:var(--neon)}
 
+/* nota screenshots — framed hero strip (nota page) */
+.shots{padding:clamp(44px,6vw,86px) 0;border-bottom:1px solid var(--rule);overflow:hidden}
+.shots-head{display:grid;grid-template-columns:var(--rail) 1fr;gap:clamp(18px,3vw,48px);margin-bottom:clamp(34px,4.5vw,60px)}
+.shots-head .label{align-self:start}
+.shots-h{font-weight:800;font-stretch:112%;line-height:1.05;letter-spacing:-.02em;font-size:clamp(24px,3.6vw,44px);text-transform:lowercase}
+.shots-h .em{color:var(--neon)}
+:root[data-theme="light"] .shots-h .em{color:var(--chip-ink);background:var(--neon);border-radius:6px;padding:0 .1em;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.strip{display:flex;justify-content:center;align-items:flex-end;gap:clamp(14px,2.6vw,38px);flex-wrap:wrap}
+.phone{margin:0;display:flex;flex-direction:column;align-items:center;gap:16px;width:clamp(178px,19vw,232px)}
+.phone.raise{margin-bottom:clamp(22px,3.4vw,52px)}
+.device{width:100%;background:#0b0b0c;border-radius:34px;padding:7px;box-shadow:0 36px 70px -26px rgba(0,0,0,.78),0 0 0 1px rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.05)}
+.device img{display:block;width:100%;height:auto;border-radius:27px}
+.phone figcaption{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-faint)}
+.phone figcaption b{color:var(--neon);font-weight:500}
+@media(max-width:760px){.shots-head{grid-template-columns:1fr}.phone.raise{margin-bottom:0}.phone{width:clamp(150px,42vw,220px)}}
+
 .lead-row{display:grid;grid-template-columns:var(--rail) 1fr;gap:clamp(18px,3vw,48px);padding:clamp(34px,5vw,64px) 0;border-bottom:1px solid var(--rule)}
 .lead-row .marker{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim)}
 .lead{font-size:clamp(20px,3vw,34px);font-weight:500;font-stretch:106%;line-height:1.22;letter-spacing:-.015em;max-width:26ch}
