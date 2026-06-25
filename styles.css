@@ -2,6 +2,11 @@
    Archivo (display) + JetBrains Mono (meta) · single blue signature #00A8FF
    dark = accent as text · light = accent as fills. Built 2026-06-14. */
 
+/* self-hosted fonts — no third-party CDN, so no visitor IP is sent to Google (GDPR).
+   Both are variable woff2, latin subset (covers EN + DE). Added 2026-06-25. */
+@font-face{font-family:"Archivo";font-style:normal;font-weight:300 900;font-stretch:62% 125%;font-display:swap;src:url("fonts/archivo-latin.woff2") format("woff2")}
+@font-face{font-family:"JetBrains Mono";font-style:normal;font-weight:400 700;font-display:swap;src:url("fonts/jetbrains-mono-latin.woff2") format("woff2")}
+
 :root{
   /* ---- dark (default) · accent = blue (single signature) ---- */
   --bg:#0a0a0a;
