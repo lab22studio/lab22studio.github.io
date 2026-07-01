@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wallpapers — lab22</title>
-<meta name="description" content="SINGULAR — a curated collection of deep-black cosmic wallpapers for desktop and mobile. Made by lab22.">
+<meta name="description" content="Curated cosmic wallpaper packs by lab22. True-black, OLED-ready collections for desktop and mobile.">
 <style>
   :root{ --bg:#0D0C0A; --ink:#F3F0E8; --dim:#9A968E; --line:#231F1A; --accent:#1FD0E6; }
   *{box-sizing:border-box;margin:0;padding:0}
@@ -12,49 +12,41 @@
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased;line-height:1.5}
   .mono{font-family:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+  .wrap{max-width:900px;margin:0 auto;padding:0 28px}
   a{color:inherit;text-decoration:none}
   header{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line)}
   .brand{font-weight:800;letter-spacing:.02em;font-size:20px}
   nav a{color:var(--dim);margin-left:26px;font-size:14px}
   nav a:hover{color:var(--ink)}
 
-  /* hero */
-  .hero{padding:86px 0 40px}
-  .eyebrow{color:var(--accent);font-size:13px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:20px}
-  h1{font-size:clamp(38px,6vw,72px);line-height:1.02;font-weight:800;letter-spacing:-.02em;max-width:14ch}
-  .lede{color:var(--dim);font-size:clamp(17px,2.2vw,21px);margin-top:22px;max-width:52ch}
-  .cta{display:inline-flex;align-items:center;gap:10px;margin-top:34px;background:var(--ink);color:#0b0a08;
-    padding:15px 26px;border-radius:999px;font-weight:700;font-size:15px;transition:transform .15s}
+  /* page head */
+  .page-head{padding:70px 0 26px}
+  .page-head h1{font-size:clamp(34px,5vw,54px);font-weight:800;letter-spacing:-.02em}
+  .page-head p{color:var(--dim);font-size:18px;margin-top:14px;max-width:52ch}
+
+  /* feed of series "posts" */
+  .feed{padding:26px 0 20px;display:flex;flex-direction:column;gap:48px}
+  .block{border:1px solid var(--line);border-radius:18px;overflow:hidden;background:#0f0e0b;transition:border-color .2s}
+  .block:hover{border-color:#3a342c}
+  .block .cover{display:block;aspect-ratio:16/9;overflow:hidden}
+  .block .cover img{width:100%;height:100%;object-fit:cover;display:block}
+  .block .body{padding:32px 34px 34px}
+  .eyebrow{color:var(--accent);font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+  .block h2{font-size:30px;font-weight:800;letter-spacing:-.01em;margin:12px 0 0}
+  .block .desc{color:var(--dim);font-size:16px;margin-top:14px;max-width:60ch}
+  .facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin:22px 0 0}
+  .facts li{font-size:12.5px;color:var(--dim);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+  .buy{display:flex;align-items:center;gap:18px;margin-top:26px;flex-wrap:wrap}
+  .cta{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#0b0a08;
+    padding:13px 22px;border-radius:999px;font-weight:700;font-size:14.5px;transition:transform .15s}
   .cta:hover{transform:translateY(-2px)}
-  .price{color:var(--dim);margin-left:16px;font-size:15px}
+  .price{font-weight:800;font-size:20px}
+  .price small{color:var(--dim);font-weight:500;font-size:13px;margin-left:8px}
 
-  figure{margin:0}
-  .shot{margin:56px 0;border-radius:16px;overflow:hidden;border:1px solid var(--line)}
-  .shot img{width:100%;display:block}
-  .cap{color:var(--dim);font-size:13px;margin-top:12px}
-
-  /* featured card */
-  .card{display:grid;grid-template-columns:1.25fr 1fr;gap:0;border:1px solid var(--line);border-radius:18px;overflow:hidden;margin:64px 0}
-  .card img{width:100%;height:100%;object-fit:cover;display:block}
-  .card .body{padding:44px}
-  .card h2{font-size:30px;font-weight:800;letter-spacing:-.01em}
-  .card h2 .arrow{color:var(--accent)}
-  .card p{color:var(--dim);margin-top:14px;font-size:16px}
-  .meta{display:flex;gap:22px;margin-top:26px;flex-wrap:wrap}
-  .meta div{font-size:13px;color:var(--dim)}
-  .meta b{display:block;color:var(--ink);font-size:22px;font-weight:800}
-
-  .two{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:24px 0}
-  .two figure{border-radius:14px;overflow:hidden;border:1px solid var(--line)}
-  .two img{width:100%;display:block}
-
-  section h3{font-size:14px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:64px 0 6px}
-
-  footer{border-top:1px solid var(--line);margin-top:90px;padding:40px 0 70px;color:var(--dim);font-size:13px;
+  footer{border-top:1px solid var(--line);margin-top:70px;padding:40px 0 70px;color:var(--dim);font-size:13px;
     display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
   footer a:hover{color:var(--ink)}
-  @media(max-width:760px){ .card{grid-template-columns:1fr} .two{grid-template-columns:1fr} }
+  @media(max-width:640px){ .block .body{padding:26px 22px 28px} }
 </style>
 </head>
 <body>
@@ -64,53 +56,37 @@
     <nav><a href="/">work</a><a href="/nota">nota</a><a href="/wallpapers">wallpapers</a><a href="mailto:hello@lab22.studio">contact</a></nav>
   </header>
 
-  <section class="hero">
-    <div class="eyebrow mono">SINGULAR · Vol. 1 — Cosmos</div>
-    <h1>The sublime, on your screen.</h1>
-    <p class="lede">A curated collection of deep-black cosmic wallpapers — four masterpiece phenomena, finished by hand, matched across your Mac and your phone.</p>
-    <a class="cta" href="https://lab22.gumroad.com/l/singular-cosmos">Get the collection →</a>
-    <span class="price mono">32 wallpapers · $24</span>
+  <section class="page-head">
+    <h1>wallpapers</h1>
+    <p>Curated cosmic wallpaper packs — true black, OLED-ready, matched across desktop and mobile. A new collection, now and then.</p>
   </section>
 
-  <figure class="shot">
-    <img src="assets/hero-bloom-desk.jpg" alt="A spiral-galaxy wallpaper on a desktop monitor">
-  </figure>
+  <section class="feed">
 
-  <!-- featured pack card (Oliur pattern, dark) -->
-  <div class="card">
-    <img src="assets/card-singularity-desk.jpg" alt="A black-hole wallpaper on a monitor">
-    <div class="body">
-      <h2>Vol. 1 — Cosmos <span class="arrow">→</span></h2>
-      <p>Singularity, Wanderer, Veil, Bloom — each in four colorways, for desktop and mobile. True black, up to 5.6K, yours forever.</p>
-      <div class="meta">
-        <div><b>32</b> wallpapers</div>
-        <div><b>4×4</b> phenomena × colorways</div>
-        <div><b>5.6K</b> desktop · mobile</div>
+    <!-- SERIES BLOCK — one per pack, newest first -->
+    <article class="block">
+      <a class="cover" href="https://lab22.gumroad.com/l/singular-cosmos">
+        <img src="assets/cosmos-cover.jpg" alt="The Milky Way wallpaper on a desktop monitor">
+      </a>
+      <div class="body">
+        <div class="eyebrow mono">SINGULAR · Vol. 1</div>
+        <h2>Cosmos</h2>
+        <p class="desc">Four masterpiece phenomena — a black hole, the Milky Way, a nebula pillar, a spiral galaxy — each in four colorways (Aurelian · Lagoon · Ember · Amethyst), matched across desktop and mobile. Hand-finished, not a 300-file dump.</p>
+        <ul class="facts mono">
+          <li>32 wallpapers</li>
+          <li>4 phenomena × 4 colorways</li>
+          <li>16 desktop · 5632×3072</li>
+          <li>16 mobile · 3072×5632</li>
+          <li>PNG + JPG · true black</li>
+          <li>yours forever</li>
+        </ul>
+        <div class="buy">
+          <span class="price mono">$24<small>instant download</small></span>
+          <a class="cta" href="https://lab22.gumroad.com/l/singular-cosmos">Get it on Gumroad →</a>
+        </div>
       </div>
-      <a class="cta" href="https://lab22.gumroad.com/l/singular-cosmos" style="margin-top:30px">Get it on Gumroad →</a>
-    </div>
-  </div>
+    </article>
 
-  <section>
-    <h3>What's inside</h3>
-    <figure class="shot"><img src="assets/grid-desktop.jpg" alt="All 16 desktop wallpapers"></figure>
-    <div class="cap mono">16 desktop wallpapers · 5632×3072</div>
-    <figure class="shot"><img src="assets/colorways.jpg" alt="Four colorways"></figure>
-    <div class="cap mono">every wallpaper in four moods — Aurelian · Lagoon · Ember · Amethyst</div>
-  </section>
-
-  <section>
-    <h3>On every device</h3>
-    <div class="two">
-      <figure><img src="assets/grid-mobile.jpg" alt="Mobile wallpapers"></figure>
-      <figure><img src="assets/hand-iphone.jpg" alt="A black-hole wallpaper on an iPhone"></figure>
-    </div>
-    <div class="cap mono">16 mobile wallpapers · 3072×5632 · OLED true-black</div>
-  </section>
-
-  <section style="text-align:center;padding:40px 0">
-    <a class="cta" href="https://lab22.gumroad.com/l/singular-cosmos">Get SINGULAR — Vol. 1 →</a>
-    <div class="price mono" style="margin:16px 0 0">$24 · instant download · yours forever</div>
   </section>
 
   <footer>
